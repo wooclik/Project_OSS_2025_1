@@ -38,7 +38,7 @@ class Budget:
                 f.write("=" * 30 + "\n")
                 total = sum(e.amount for e in self.expenses)
                 f.write(f"총 지출 : {total}원\n")
-            print(f"TXT로 저장 완료! : {filename}\n")
+            print(f"TXT로 저장 완료 : {filename}\n")
         except Exception as e:
             print(f"[오류] TXT 저장 실패 : {e}\n")
 
