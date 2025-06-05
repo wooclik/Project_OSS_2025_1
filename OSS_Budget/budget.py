@@ -11,6 +11,7 @@ class Budget:
         expense = Expense(today, category, description, amount)
         self.expenses.append(expense)
         print("지출이 추가되었습니다.\n")
+        self.printRandomTip()
 
     def list_expenses(self):
         if not self.expenses:
