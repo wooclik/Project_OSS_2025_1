@@ -6,8 +6,8 @@ class Budget:
         self.expenses = []
 
     def add_expense(self, category, description, amount):
-        today = datetime.date.today().isoformat()
-        expense = Expense(today, category, description, amount)
+        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") #시간을 반영하도록 수정정
+        expense = Expense(now, category, description, amount)
         self.expenses.append(expense)
         print("지출이 추가되었습니다.\n")
 
